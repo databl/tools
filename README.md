@@ -57,14 +57,6 @@ We welcome contributions from team members. If you have a script, configuration,
 
 If you encounter any issues or have questions, please open an issue in the repository or contact the repository maintainer.
 
-## License
-
-...
-
-## Contact
-
-For any queries or additional information, feel free to reach out to connect@databl.io
-
 ---
 
 Thank you for contributing to our Managed Services! Your efforts help us deliver top-notch IT and cybersecurity services to our clients.
