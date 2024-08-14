@@ -7,6 +7,7 @@ Welcome to the **MSP Managed Services** repository. This repository is designed 
 This repository contains various assets that are critical for managing and delivering our Managed Services effectively. The contents include:
 
 - **Documentation**: Guides, policies, and procedures related to our managed services operations.
+- **Branding**: Images used in branding on devices and configurations.
 - **Scripts**: Automation scripts for routine tasks, monitoring, and management.
 - **Configurations**: Templates and configuration files for tools and services we use.
 - **Templates**: Proposal, contract, and report templates that can be adapted for client use.
@@ -17,6 +18,7 @@ This repository contains various assets that are critical for managing and deliv
 The repository is organized into the following directories:
 
 - **/docs**: All documentation, including how-to guides, SOPs, and service descriptions.
+- **/branding**: Images used in branding on devices.
 - **/scripts**: Automation and management scripts, including PowerShell, Bash, and Python scripts.
 - **/configurations**: Configuration files for various services and tools.
 - **/templates**: Templates for proposals, contracts, and client reports.
