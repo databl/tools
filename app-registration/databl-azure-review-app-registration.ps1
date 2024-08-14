@@ -90,7 +90,7 @@ Write-Host ''
 Write-Host 'Please record the following information and send it to Databl.'
 Write-Host '####################################################################'
 Write-Host '' 
-Write-Host 'TenentID:			' $tenantId
+Write-Host 'TenentID:			' $tenancy.TenantId
 Write-Host 'Service Principal: 	' $createdServicePrincipal.ObjectID
 Write-Host 'ClientId:		  	' $myApp.AppId 
 Write-Host 'SecretID:           ' $PasswordCredential.KeyId
@@ -99,3 +99,5 @@ Write-Host ''
 Write-Host '####################################################################' 
 Write-Host '' 
 Write-Host '' 
+
+Disconnect-AzureAD
