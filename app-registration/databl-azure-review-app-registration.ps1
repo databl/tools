@@ -14,7 +14,7 @@ $startDate = Get-Date
 
 $PasswordCredential = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordCredential
 $PasswordCredential.StartDate = $startDate
-$PasswordCredential.EndDate = $startDate.AddYears(20)
+$PasswordCredential.EndDate = $startDate.AddYears(2)
 $PasswordCredential.KeyId = $Guid
 $PasswordCredential.Value = ([System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(($Guid))))
 
