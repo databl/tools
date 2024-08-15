@@ -1,5 +1,5 @@
 $appName = 'Databl-Azure-Review'
-$GitURL = "https://github.com/netexphil/scripts/raw/main/app-registration/"
+$GitURL = "https://github.com/databl/msp/tree/main/app-registration"
 $certFileName = 'Databl-Azure-Review_202408.cer'
 
 Write-Host "Installing AzureAD PowerShell Module"
