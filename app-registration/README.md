@@ -11,10 +11,10 @@ eg.
 Please record the following information and send it to Databl.
 ####################################################################
 
-TenentID:		     <Tenant ID>
+TenentID:		<Tenant ID>
 Service Principal:   8d48e952-c2af-43a1-aedb-0c4810a644f0
 
-ClientId:		     9ed3d69f-a091-4497-ab2e-09d5a2fe7aa4
+ClientId:	     9ed3d69f-a091-4497-ab2e-09d5a2fe7aa4
 SecretID:            eb34a04d-9fce-462f-af43-f9fe2b90bc46
 Client Secret:	     ZWIzNGEwNGQtOWZjZS00NjJmLWFmNDMtZjlmZTJiOTBiYzQ2
 
