@@ -86,6 +86,27 @@ $cert = New-Object -TypeName System.Security.Cryptography.X509Certificates.X509C
 $keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
 New-AzureADApplicationKeyCredential -ObjectId $myApp.ObjectId -Type AsymmetricX509Cert -Usage Verify -Value $keyValue -EndDate $cert.NotAfter
 
+##################################
+### Grant Admin consent.
+##################################
+$graphSpId = $(Get-MgServicePrincipal -Filter "appId eq '00000003-0000-0000-c000-000000000000'").Id
+
+do{
+    $sp = Get-MgServicePrincipal -Filter "appId eq '$($myapp.AppId)'"
+} until ($sp.count -ne 0)
+
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc1.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc2.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc3.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc4.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc5.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc6.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc7.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc8.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc9.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc10.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc11.Id -ResourceId $graphSpId
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $sp.Id -PrincipalId $sp.Id -AppRoleId $acc12.Id -ResourceId $graphSpId
 
 ##################################
 ### Print the secret to upload to user secrets or a key vault
