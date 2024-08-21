@@ -1,4 +1,4 @@
-Copy the App registration PowerShell script **[databl-azure-review-app-registration.ps1](https://github.com/databl/msp/blob/main/app-registration/databl-azure-review-app-registration.ps1))** to your PC and run it from PowerShell as follows.
+Copy the App registration PowerShell script (**[databl-azure-review-app-registration.ps1](https://github.com/databl/msp/blob/main/app-registration/databl-azure-review-app-registration.ps1))** to your PC and run it from PowerShell as follows.
 
 `PS> databl-azure-review-app-registration.ps1 `
 
@@ -21,7 +21,7 @@ Client Secret:	     ZWIzNGEwNGQtOWZjZS00NjJmLWFmNDMtZjlmZTJiOTBiYzQ2
 ####################################################################
 ```
 
-**Grant the Apps rested permissions.**
+**Grant the Apps rested permissions.**https://github.com/databl/tools.git
 Login in to the Azure portal [https://portal.azure.com](https://portal.azure.com )
 
 Search for App Registrations and select it. (fig 1.)
