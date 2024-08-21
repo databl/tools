@@ -35,7 +35,7 @@ Go to the All Applications tab (fig2.1) and select the Databl-Maester app (fig2.
 fig2
 
 Now navigate to API Permissions (fig3.1) 
-You will see the status for all the requested Graph permission is Not granted for <your tenancy name> (fig3.2)
+If you see the status for any of the requested Graph permission is Not granted for <your tenancy name> (fig3.2), please Grant Admin consent for this app.
 To grant the required permissions select grant admin consent for <your tenancy name> (fig3.3) and select Yes to Grant admin consent confirmation.
 
 ![fig3](fig3.png)
