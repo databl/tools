@@ -10,6 +10,21 @@ The *databl-azure-review-app-registration.ps1* PowerShell script will register a
 
 The *databl-azure-review-app-registration_cert.ps1* PowerSehll script will also register an App in your Microsoft Azure tenancy but instead uses a Certificate pair to authenticate to your tenancy.  This alliviates the need to pass passwords over insecure transport methods.
 
+This App Registration will grant the Databl Azure Review application the following permissions to your tenancy.
+```
+ Directory.Read.All
+ DirectoryRecommendations.Read.All 
+ IdentityRiskEvent.Read.All 
+ Policy.Read.All 
+ Policy.Read.ConditionalAccess 
+ PrivilegedAccess.Read.AzureAD 
+ Reports.Read.All  
+ RoleEligibilitySchedule.Read.Directory 
+ RoleManagement.Read.All 
+ RoleManagement.User.Read.All
+ UserAuthenticationMethod.Read.All 
+```
+
 Login to your Azure account when prompted with an account that has permissions to create an App Registrations. 
 
 Copy the information that this script creates and send it to Databl.
