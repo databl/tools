@@ -43,19 +43,19 @@ Login in to the Azure portal [https://portal.azure.com](https://portal.azure.com
 
 Search for App Registrations and select it. (fig 1.)
 
-![fig1](fig1.png)
+![fig1](images/fig1.png)
 fig1
 
 Go to the All Applications tab (fig2.1) and select the Databl-Maester app (fig2.2)
 
-![fig2](fig2.png)
+![fig2](images/fig2.png)
 fig2
 
 Now navigate to API Permissions (fig3.1) 
 If you see the status for any of the requested Graph permission is **not** granted for <your tenancy name> (fig3.2), please Grant Admin consent for this app.
 To grant the required permissions select grant admin consent for <your tenancy name> (fig3.3) and select Yes to Grant admin consent confirmation.
 
-![fig3](fig3.png)
+![fig3](images/fig3.png)
 fig3
 
 You will then see the status change to Granted for <tenancy name>

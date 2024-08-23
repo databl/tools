@@ -1,4 +1,4 @@
-Copy the App registration PowerShell script **([databl-azure-review-app-registration_cert.ps1](https://raw.githubusercontent.com/databl/tools/main/app-registration/databl-azure-review-app-registration_cert.ps1))** and **([Databl-Azure-Review_202408.cer]https://github.com/databl/tools/raw/main/app-registration/Databl-Azure-Review_202408.cer)** to your PC and run it from PowerShell as follows.
+Copy the App registration PowerShell script **([databl-azure-review-app-registration_cert.ps1](https://raw.githubusercontent.com/databl/tools/main/app-registration/databl-azure-review-app-registration_cert.ps1))** to your PC and run it from PowerShell as follows.
 
 `PS> databl-azure-review-app-registration_cert.ps1`
 
