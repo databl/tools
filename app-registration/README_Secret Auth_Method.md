@@ -1,8 +1,8 @@
-Copy the App registration PowerShell script **([databl-azure-review-app-registration_cert.ps1](https://raw.githubusercontent.com/databl/tools/main/app-registration/databl-azure-review-app-registration_cert.ps1))** and **([Databl-Azure-Review_202408.cer]https://github.com/databl/tools/raw/main/app-registration/Databl-Azure-Review_202408.cer)** to your PC and run it from PowerShell as follows.
+Copy the App registration PowerShell script (**[databl-azure-review-app-registration.ps1](https://github.com/ure-review-registratridatabl/msp/blob/main/app-registration/databl-azure-review-app-registration.ps1))** to your PC and run it from PowerShell as follows.
 
-`PS> databl-azure-review-app-registration_cert.ps1`
+`PS> databl-azure-review-app-registration.ps1 `
 
-The *databl-azure-review-app-registration_cert.ps1* PowerSehll script will register an App in your Microsoft Azure tenancy and uses a Certificate pair to authenticate to your tenancy.  
+The *databl-azure-review-app-registration.ps1* PowerShell script will register an App in your Microsoft Azure tenancy along with a Client Secret for the Databl review application to authenticate to your tenancy.
 
 This App Registration will grant the Databl Azure Review application the following permissions to your tenancy.
 ```
@@ -28,11 +28,12 @@ eg.
 Please record the following information and send it to Databl.
 ####################################################################
 
-TenentID:		    <Tenant ID>
-Service Principal:  8d48e952-c2af-43a1-aedb-0c4810a644f0
+TenentID:		     <Tenant ID>
+Service Principal:   8d48e952-c2af-43a1-aedb-0c4810a644f0
 
-ClientId:	        9ed3d69f-a091-4497-ab2e-09d5a2fe7aa4
-ObjectId:           d1e5fe39-db11-4cea-b4b3-07b75f978584
+ClientId:	         9ed3d69f-a091-4497-ab2e-09d5a2fe7aa4
+SecretID:            eb34a04d-9fce-462f-af43-f9fe2b90bc46
+Client Secret:	     ZWIzNGEwNGQtOWZjZS00NjJmLWFmNDMtZjlmZTJiOTBiYzQ2
 
 ####################################################################
 ```
@@ -57,4 +58,4 @@ To grant the required permissions select grant admin consent for <your tenancy n
 ![fig3](fig3.png)
 fig3
 
-You will then see the status change to "Granted for 'tenancy name'"
+You will then see the status change to Granted for <tenancy name>
